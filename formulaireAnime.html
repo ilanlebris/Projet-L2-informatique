@@ -1,0 +1,71 @@
+<?php
+
+$corps =<<<EOT
+<form method="post" action="index.php?action={$cible}&idA={$idA}" name="form_user" class="formulaire" enctype="multipart/form-data">
+    
+    <div class="formulaire1">
+        <span>            
+            <label>Titre</label>
+            <input type="text" name="titre" value="{$titre}">
+            <span class="alerte">{$erreur["titre"]}</span><br>
+        </span>
+        
+        <span>
+            <label>Créateur original</label>
+            <input type="text" name="createur" value="{$createur}">
+            <span class="alerte">{$erreur["createur"]}</span><br>
+        </span>
+      
+        <span>
+            <label>Studio d'animation</label>
+            <input type="text" name="studio" value="{$studio}">
+            <span class="alerte">{$erreur["studio"]}</span><br>
+        </span>
+            
+        <span>
+            <label>Date de sortie</label>
+            <input type="text" name="dateS" value="{$dateS}">
+            <span class="alerte">{$erreur["dateS"]}</span><br>
+        </span>
+        
+        <span>
+            <label>Statut</label>
+            <select name="statut">
+                <option value="Fini">Fini</option>
+                <option value="A suivre">A suivre</option>
+                <option value="En cours">En cours</option>
+            </select>
+            <span class="alerte">{$erreur["statut"]}</span><br>
+        </span>
+            
+        <span>
+            <label>Image</label>
+            <input type="file" name="image" accept="image/jpg, image/png">
+            <span class="alerte">{$erreur["image"]}</span><br>
+        </span>
+    </div>
+
+    <span>
+        <label>Note</label>
+        <input type="radio" name="note" value="1"> 1
+        <input type="radio" name="note" value="2"> 2
+        <input type="radio" name="note" value="3"> 3
+        <input type="radio" name="note" value="4"> 4
+        <input type="radio" name="note" value="5"> 5
+        <input type="radio" name="note" value="6"> 6
+        <input type="radio" name="note" value="7"> 7
+        <input type="radio" name="note" value="8"> 8
+        <input type="radio" name="note" value="9"> 9
+        <input type="radio" name="note" value="10"> 10
+        <span class="alerte">{$erreur["note"]}</span><br> 
+    </span>
+
+      
+    <input type="submit" name="user_valider" value="Valider">
+    
+    <a href="index.php?action=liste">Annuler</a>
+</form>
+EOT;
+
+$zonePrincipale = $corps;
+?>

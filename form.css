@@ -1,0 +1,150 @@
+@font-face {
+	font-family:"MaPolice";
+	src: url("shojumaru-regular.ttf");
+}
+
+body {
+  font-family: MaPolice, "Microsoft YaHei UI", serif;
+  color: #ffffff;
+  background-color: #5a5a5a;
+}
+
+.formulaire {
+  text-align: center;
+}
+
+.formulaire1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+}
+
+.formulaire1 span {
+  display: inline-block;
+}
+
+.alerte {
+  color: #ad0707;
+}
+
+main { 
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h1, h2{ 
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  border: 2px solid #ffffff;;
+  padding: 10px;
+}
+
+main a {
+  color: #ffffff;
+  background-color: #565555;
+}
+
+.menu {
+  text-align: center;
+	padding: 2em 1em;
+}
+
+.menu > a {
+  font-size: 30px;
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+}
+
+.menu > a:hover, .n1 > a:hover, .fiche nav > a:hover{ 
+  color: #7e1414;
+	border: 2px solid;
+	background-color: #af9595;
+  transition: border-radius 1s,
+              border 1s,
+              box-shadow 0.5s,
+              background-color 0.5s;
+}
+
+.n1 a:hover {
+	box-shadow: 2px 2px 2px #ffffff;
+}
+
+.ZP {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.n1 {
+  display: grid;
+	grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.f2 {
+  text-align: center;
+  border: 2px solid;
+	border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fiche {
+  display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 5px;
+}
+
+.type {
+  color: #7e1414;
+}
+
+.info {
+  text-align: center;
+}
+
+.fiche nav {
+  display: grid;
+	grid-template-columns: 1fr;
+  text-align: center;
+}
+
+img {
+	border: 2px solid #202020;
+  border-radius: 5px;
+}
+
+input, option, select{
+  color: black;
+}
+
+.valide {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+}
+
+.valide input{
+  font-size: 20px;
+  background-color: #339138;
+  margin: 20px;
+}
+
+.valide a{
+  text-align: center;
+  background-color: #ad0707;
+  border: 2px solid #cccccc;
+  font-size: 20px;
+  margin: 20px;
+}
+
+footer { 
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  border: 2px solid #ffffff;;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
